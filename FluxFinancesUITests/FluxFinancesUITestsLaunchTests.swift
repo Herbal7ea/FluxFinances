@@ -1,9 +1,4 @@
 //
-//  FluxFinancesUITestsLaunchTests.swift
-//  FluxFinancesUITests
-//
-//  Created by Jon Bott on 1/13/24.
-//
 
 import XCTest
 

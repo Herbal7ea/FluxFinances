@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094EABDC2B529A0300A39DF1 /* AtomicDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094EABDB2B529A0300A39DF1 /* AtomicDesignSystem.swift */; };
 		097109222B52483800CFD692 /* FluxFinancesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097109212B52483800CFD692 /* FluxFinancesApp.swift */; };
 		097109242B52483800CFD692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097109232B52483800CFD692 /* ContentView.swift */; };
 		097109262B52483A00CFD692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097109252B52483A00CFD692 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		097109332B52483A00CFD692 /* FluxFinancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097109322B52483A00CFD692 /* FluxFinancesTests.swift */; };
 		0971093D2B52483A00CFD692 /* FluxFinancesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971093C2B52483A00CFD692 /* FluxFinancesUITests.swift */; };
 		0971093F2B52483A00CFD692 /* FluxFinancesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971093E2B52483A00CFD692 /* FluxFinancesUITestsLaunchTests.swift */; };
+		09D8D1E62B52663A00EC2A70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D1E52B52663A00EC2A70 /* Extensions.swift */; };
+		09D8D1EA2B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D1E82B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf */; };
+		09D8D1EB2B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D1E92B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		094EABDB2B529A0300A39DF1 /* AtomicDesignSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicDesignSystem.swift; sourceTree = "<group>"; };
 		0971091E2B52483800CFD692 /* FluxFinances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxFinances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097109212B52483800CFD692 /* FluxFinancesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxFinancesApp.swift; sourceTree = "<group>"; };
 		097109232B52483800CFD692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,10 @@
 		097109382B52483A00CFD692 /* FluxFinancesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluxFinancesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0971093C2B52483A00CFD692 /* FluxFinancesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxFinancesUITests.swift; sourceTree = "<group>"; };
 		0971093E2B52483A00CFD692 /* FluxFinancesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxFinancesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09D8D1E52B52663A00EC2A70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		09D8D1E82B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		09D8D1E92B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		09D8D1EC2B526C1600EC2A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094EABDA2B5299F200A39DF1 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				094EABDB2B529A0300A39DF1 /* AtomicDesignSystem.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
 		097109152B52483800CFD692 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +111,14 @@
 		097109202B52483800CFD692 /* FluxFinances */ = {
 			isa = PBXGroup;
 			children = (
+				094EABDA2B5299F200A39DF1 /* Design */,
+				09D8D1EC2B526C1600EC2A70 /* Info.plist */,
+				09D8D1E72B526AF300EC2A70 /* Fonts */,
 				097109212B52483800CFD692 /* FluxFinancesApp.swift */,
 				097109232B52483800CFD692 /* ContentView.swift */,
 				097109252B52483A00CFD692 /* Assets.xcassets */,
 				097109272B52483A00CFD692 /* Preview Content */,
+				09D8D1E52B52663A00EC2A70 /* Extensions.swift */,
 			);
 			path = FluxFinances;
 			sourceTree = "<group>";
@@ -125,6 +146,15 @@
 				0971093E2B52483A00CFD692 /* FluxFinancesUITestsLaunchTests.swift */,
 			);
 			path = FluxFinancesUITests;
+			sourceTree = "<group>";
+		};
+		09D8D1E72B526AF300EC2A70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09D8D1E82B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf */,
+				09D8D1E92B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				097109292B52483A00CFD692 /* Preview Assets.xcassets in Resources */,
+				09D8D1EB2B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf in Resources */,
+				09D8D1EA2B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf in Resources */,
 				097109262B52483A00CFD692 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				097109242B52483800CFD692 /* ContentView.swift in Sources */,
+				09D8D1E62B52663A00EC2A70 /* Extensions.swift in Sources */,
 				097109222B52483800CFD692 /* FluxFinancesApp.swift in Sources */,
+				094EABDC2B529A0300A39DF1 /* AtomicDesignSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +459,7 @@
 				DEVELOPMENT_TEAM = 6A4W4G6ZCH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FluxFinances/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +489,7 @@
 				DEVELOPMENT_TEAM = 6A4W4G6ZCH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FluxFinances/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
