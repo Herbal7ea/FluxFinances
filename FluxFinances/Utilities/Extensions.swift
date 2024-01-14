@@ -1,6 +1,7 @@
 // 
 
 import UIKit
+import SwiftUI
 
 // NOTE: From Paul Hudson/HackingWithSwift: https://www.hackingwithswift.com/example-code/uicolor/how-to-convert-a-hex-color-to-a-uicolor
 extension UIColor {
@@ -32,3 +33,35 @@ extension UIColor {
 }
 
 
+public func printSystemFonts() {
+    // Use this identifier to filter out the system fonts in the logs.
+    let identifier: String = "[SYSTEM FONTS]"
+    // Here's the functionality that prints all the system fonts.
+    for family in UIFont.familyNames as [String] {
+        debugPrint("\(identifier) FONT FAMILY :  \(family)")
+        for name in UIFont.fontNames(forFamilyName: family) {
+            debugPrint("\(identifier) FONT NAME :  \(name)")
+        }
+    }
+}
+
+extension UIFont {
+    var font: Font { Font(self) }
+}
+
+extension UIImage {
+    var image: Image { Image(uiImage: self) }
+}
+
+
+// https://danielsaidi.com/blog/2022/05/25/generating-a-random-color
+public extension Color {
+    static func random(randomOpacity: Bool = false) -> Color {
+        Color(
+            red: .random(in: 0...1),
+            green: .random(in: 0...1),
+            blue: .random(in: 0...1),
+            opacity: randomOpacity ? .random(in: 0...1) : 1
+        )
+    }
+}

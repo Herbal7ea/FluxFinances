@@ -18,6 +18,12 @@
 		09D8D1E62B52663A00EC2A70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D1E52B52663A00EC2A70 /* Extensions.swift */; };
 		09D8D1EA2B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D1E82B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf */; };
 		09D8D1EB2B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D1E92B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf */; };
+		09EDCF722B535A3C002AB77A /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 09EDCF712B535A3C002AB77A /* RswiftLibrary */; };
+		09F0C0672B53E2D100B476A9 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0C0662B53E2D100B476A9 /* TransactionsView.swift */; };
+		09F0C0692B53E2F200B476A9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0C0682B53E2F200B476A9 /* Transaction.swift */; };
+		09F0C0732B53E36A00B476A9 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0C0722B53E36A00B476A9 /* ViewModifiers.swift */; };
+		09F0C0782B53E39A00B476A9 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0C0772B53E39A00B476A9 /* Overview.swift */; };
+		09F0C07C2B53E43600B476A9 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0C07B2B53E43600B476A9 /* TransactionRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,11 @@
 		09D8D1E82B526B0400EC2A70 /* JosefinSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		09D8D1E92B526B0400EC2A70 /* JosefinSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		09D8D1EC2B526C1600EC2A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09F0C0662B53E2D100B476A9 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		09F0C0682B53E2F200B476A9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		09F0C0722B53E36A00B476A9 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		09F0C0772B53E39A00B476A9 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		09F0C07B2B53E43600B476A9 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EDCF722B535A3C002AB77A /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 		094EABDA2B5299F200A39DF1 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				09D8D1E72B526AF300EC2A70 /* Fonts */,
 				094EABDB2B529A0300A39DF1 /* AtomicDesignSystem.swift */,
 			);
 			path = Design;
@@ -111,14 +124,13 @@
 		097109202B52483800CFD692 /* FluxFinances */ = {
 			isa = PBXGroup;
 			children = (
+				09F0C0632B53E2C600B476A9 /* Views */,
 				094EABDA2B5299F200A39DF1 /* Design */,
 				09D8D1EC2B526C1600EC2A70 /* Info.plist */,
-				09D8D1E72B526AF300EC2A70 /* Fonts */,
-				097109212B52483800CFD692 /* FluxFinancesApp.swift */,
-				097109232B52483800CFD692 /* ContentView.swift */,
+				09F0C06F2B53E36000B476A9 /* Utilities */,
 				097109252B52483A00CFD692 /* Assets.xcassets */,
 				097109272B52483A00CFD692 /* Preview Content */,
-				09D8D1E52B52663A00EC2A70 /* Extensions.swift */,
+				097109212B52483800CFD692 /* FluxFinancesApp.swift */,
 			);
 			path = FluxFinances;
 			sourceTree = "<group>";
@@ -157,6 +169,43 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		09F0C0632B53E2C600B476A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09F0C0842B53E49B00B476A9 /* Transactions */,
+				09F0C07F2B53E47500B476A9 /* Overview */,
+				097109232B52483800CFD692 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09F0C06F2B53E36000B476A9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09D8D1E52B52663A00EC2A70 /* Extensions.swift */,
+				09F0C0722B53E36A00B476A9 /* ViewModifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09F0C07F2B53E47500B476A9 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				09F0C0772B53E39A00B476A9 /* Overview.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		09F0C0842B53E49B00B476A9 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				09F0C0662B53E2D100B476A9 /* TransactionsView.swift */,
+				09F0C0682B53E2F200B476A9 /* Transaction.swift */,
+				09F0C07B2B53E43600B476A9 /* TransactionRow.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,8 +220,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				09EDCF742B535A47002AB77A /* PBXTargetDependency */,
 			);
 			name = FluxFinances;
+			packageProductDependencies = (
+				09EDCF712B535A3C002AB77A /* RswiftLibrary */,
+			);
 			productName = FluxFinances;
 			productReference = 0971091E2B52483800CFD692 /* FluxFinances.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +298,9 @@
 				Base,
 			);
 			mainGroup = 097109152B52483800CFD692;
+			packageReferences = (
+				09EDCF702B535A3C002AB77A /* XCRemoteSwiftPackageReference "R" */,
+			);
 			productRefGroup = 0971091F2B52483800CFD692 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,7 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F0C07C2B53E43600B476A9 /* TransactionRow.swift in Sources */,
+				09F0C0782B53E39A00B476A9 /* Overview.swift in Sources */,
+				09F0C0672B53E2D100B476A9 /* TransactionsView.swift in Sources */,
+				09F0C0732B53E36A00B476A9 /* ViewModifiers.swift in Sources */,
 				097109242B52483800CFD692 /* ContentView.swift in Sources */,
+				09F0C0692B53E2F200B476A9 /* Transaction.swift in Sources */,
 				09D8D1E62B52663A00EC2A70 /* Extensions.swift in Sources */,
 				097109222B52483800CFD692 /* FluxFinancesApp.swift in Sources */,
 				094EABDC2B529A0300A39DF1 /* AtomicDesignSystem.swift in Sources */,
@@ -325,6 +386,10 @@
 			isa = PBXTargetDependency;
 			target = 0971091D2B52483800CFD692 /* FluxFinances */;
 			targetProxy = 097109392B52483A00CFD692 /* PBXContainerItemProxy */;
+		};
+		09EDCF742B535A47002AB77A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 09EDCF732B535A47002AB77A /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -624,6 +689,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09EDCF702B535A3C002AB77A /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09EDCF712B535A3C002AB77A /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09EDCF702B535A3C002AB77A /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		09EDCF732B535A47002AB77A /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 097109162B52483800CFD692 /* Project object */;
 }
